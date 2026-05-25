@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="content-section">
+
+    {% if object %}
+        <h2 class="mb-4">Update Post</h2>
+    {% else %}
+        <h2 class="mb-4">Create New Post</h2>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <fieldset class="form-group mb-3">
+            {{ form|crispy }}
+        </fieldset>
+
+        <button class="btn btn-success" type="submit">
+            Publish
+        </button>
+    </form>
+
+</div>
+{% endblock %}

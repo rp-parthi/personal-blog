@@ -1,0 +1,92 @@
+body {
+    background-color: #f4f8f5;
+    color: #2f3e34;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #4f6f52;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #e2e8f0 !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+/* Blog Cards */
+.content-section {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.content-section:hover {
+    transform: translateY(-2px);
+}
+
+/* Post Title */
+.article-title {
+    color: #3a5a40;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.article-content {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.article-title:hover {
+    color: #588157;
+}
+
+/* Metadata */
+.article-metadata {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 10px;
+}
+
+/* Post Content */
+.article-content {
+    line-height: 1.7;
+}
+
+/* Resume Page */
+.resume-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.active-page {
+    background-color: #228B22 !important;
+    border: 1px solid #228B22 !important;
+    color: white !important;
+}
+
+.hover-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.hover-btn:hover {
+    background-color: #228B22;
+    color: white !important;
+    transform: translateY(-2px);
+}
