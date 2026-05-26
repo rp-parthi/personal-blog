@@ -20,19 +20,19 @@
             </a>
         {% endfor %}
     </div>
+    {% if user.is_authenticated %}
+        <div class="mt-4">
+            <a class="btn btn-outline-success btn-sm"
+            href="{% url 'post-update' object.id %}">
+                Update
+            </a>
 
-    <div class="mt-4">
-        <a class="btn btn-outline-success btn-sm"
-           href="{% url 'post-update' object.id %}">
-            Update
-        </a>
-
-        <a class="btn btn-outline-danger btn-sm"
-           href="{% url 'post-delete' object.id %}">
-            Delete
-        </a>
-    </div>
-
+            <a class="btn btn-outline-danger btn-sm"
+            href="{% url 'post-delete' object.id %}">
+                Delete
+            </a>
+        </div>
+    {% endif %}
 </div>
 
 {% endblock %}

@@ -24,6 +24,31 @@ body {
     color: white !important;
 }
 
+/* Fix logout form inside navbar */
+.navbar form {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make logout button look exactly like nav-link */
+.navbar form button.nav-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #e2e8f0;
+    margin-left: 15px;
+    font: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover same as nav-link */
+.navbar form button.nav-link:hover {
+    color: white;
+}
+
 /* Blog Cards */
 .content-section {
     background: white;
