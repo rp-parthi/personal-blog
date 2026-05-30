@@ -9,7 +9,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
-
+   
     tags = TaggableManager()
 
     def formatted_markdown(self):
