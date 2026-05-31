@@ -7,6 +7,7 @@ import markdown
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
+    excerpt = models.CharField(max_length=255, blank=True, default="")
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
    

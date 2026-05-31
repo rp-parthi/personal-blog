@@ -18,11 +18,11 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'content', 'tags']
+    fields = ['title', 'excerpt', 'content', 'tags']
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
-    fields = ['title', 'content', 'tags']
+    fields = ['title', 'excerpt', 'content', 'tags']
 
     def test_func(self):
         return self.request.user.is_superuser
