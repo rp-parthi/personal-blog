@@ -13,8 +13,9 @@ class Post(models.Model):
    
     tags = TaggableManager()
 
+    @property
     def formatted_markdown(self):
-        return markdown.markdown(self.content, extensions=['fenced_code', 'codehilite'])
+        return markdown.markdown(self.content, extensions=['fenced_code', 'codehilite', 'tables'])
 
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk': self.pk})

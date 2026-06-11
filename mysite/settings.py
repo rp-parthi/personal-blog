@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%uw!nh1=yscel(29kmgjrrx=!3cgnl$))p5!ux%gft$37h6yuy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["parthiban.dev", "www.parthiban.dev","15.207.85.253"]
+ALLOWED_HOSTS = ["parthiban.dev", "www.parthiban.dev","15.207.85.253", "127.0.0.1"]
 
 
 # Application definition
